@@ -104,10 +104,10 @@ def check_current_state_and_reset() -> None:
 
 
 def main() -> None:
-    if not os.path.isfile("pyproject.toml"):
-        print("Error: this folder doesn't look like a uv-initialized project")
-        print("Tip: execute 'uv init' first")
-        sys.exit(1)
+    # if not os.path.isfile("pyproject.toml"):
+    # print("Error: this folder doesn't look like a uv-initialized project")
+    # print("Tip: execute 'uv init' first")
+    # sys.exit(1)
 
     venv_folder_path = os.path.join(VIRTUALENVS_BASE, generate_venv_name())
 
