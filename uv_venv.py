@@ -119,7 +119,7 @@ def main() -> None:
     execute(cmd)
     cmd = f"ln -s '{venv_folder_path}' .venv"
     execute(cmd)
-    if SYNC:
+    if SYNC and os.path.isfile("pyproject.toml"):
         cmd = "uv sync"
         execute(cmd)
 
